@@ -50,11 +50,14 @@ ul{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 350px;
+    max-width: 350px;
     height: 100px;
-    padding-right: 30px;
+    padding-right: 10px;
+    text-size-adjust: 90%;
+
 
 }
+
 #buttons{
     display: grid;
     align-items: center;
