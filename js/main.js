@@ -5,13 +5,13 @@ const operators = document.querySelectorAll('.operators')
 const display = document.querySelector('.output')
 const equals = document.querySelector('.equals')
 const clear = document.querySelector('.clear')
-var displayNumbers = []
-var displayOperator = []
+let displayNumbers = []
+let displayOperator = []
 
 
 
 window.addEventListener('keydown', e => {
-    var currentInput = document.querySelector(`button[data-key="${e.keyCode}"]`).textContent
+    let currentInput = document.querySelector(`button[data-key="${e.keyCode}"]`).textContent
     displayNumbers.push(currentInput)
     display.textContent = displayNumbers.join("")
 })
@@ -19,7 +19,7 @@ window.addEventListener('keydown', e => {
 
 buttons.forEach((button) => {
     button.addEventListener('click', e => {
-        var currentInput = button.textContent
+        let currentInput = button.textContent
         displayNumbers.push(currentInput)
         display.textContent = displayNumbers.join("")
     })
@@ -31,7 +31,7 @@ equals.addEventListener('click', e => {
     //this takes the numbers from the operator to the last number in the array
     let secondNumbers = displayNumbers.splice(displayNumbers.indexOf(displayOperator.toString()), displayNumbers.length - 1)
     secondNumbers.shift()
-    var numbers = [parseInt(firstNumbers.join("")), parseInt(secondNumbers.join(""))]
+    let numbers = [parseInt(firstNumbers.join("")), parseInt(secondNumbers.join(""))]
     display.textContent = operator(displayOperator.toString(), numbers)
     displayNumbers = [operator(displayOperator.toString(), numbers)]
     displayOperator = []
@@ -45,14 +45,14 @@ operators.forEach((op) => {
         console.log(displayNumbers)
         while (displayOperator.length > 1) {
             console.log(displayOperator)
-            var currentOp = [displayOperator.shift()]
+            let currentOp = [displayOperator.shift()]
             console.log(currentOp)
             console.log(displayNumbers)
-            var firstNumbers = displayNumbers.splice(0, displayNumbers.indexOf(currentOp.toString()))
+            let firstNumbers = displayNumbers.splice(0, displayNumbers.indexOf(currentOp.toString()))
             console.log(firstNumbers)
-            var secondNumbers = displayNumbers.splice(displayNumbers.indexOf(currentOp.toString()) + 1, displayNumbers.length - 2)
+            let secondNumbers = displayNumbers.splice(displayNumbers.indexOf(currentOp.toString()) + 1, displayNumbers.length - 2)
             console.log(secondNumbers)
-            var numbers = [parseInt(firstNumbers.join("")), parseInt(secondNumbers.join(""))]
+            let numbers = [parseInt(firstNumbers.join("")), parseInt(secondNumbers.join(""))]
             displayNumbers = [operator(currentOp.toString(), numbers)].concat(displayOperator)
             console.log(displayNumbers)
 
@@ -79,34 +79,34 @@ window.addEventListener('keydown', e => {
         let firstNumbers = displayNumbers.splice(0, displayNumbers.indexOf(displayOperator.toString()))
         let secondNumbers = displayNumbers.splice(displayNumbers.indexOf(displayOperator.toString()), displayNumbers.length - 1)
         secondNumbers.shift()
-        var numbers = [parseInt(firstNumbers.join("")), parseInt(secondNumbers.join(""))]
+        let numbers = [parseInt(firstNumbers.join("")), parseInt(secondNumbers.join(""))]
         display.textContent = operator(displayOperator.toString(), numbers)
     }
 })
 
 function add(numbers) {
-    var answer = numbers.reduce((a, c) =>
+    let answer = numbers.reduce((a, c) =>
         a + c
     );
     return answer
 };
 
 function subtract(numbers) {
-    var answer = numbers.reduce((a, c) =>
+    let answer = numbers.reduce((a, c) =>
         a - c
     );
     return answer
 };
 
 function multiply(numbers) {
-    var answer = numbers.reduce((a, c) =>
+    let answer = numbers.reduce((a, c) =>
         a * c
     );
     return answer
 };
 
 function divided(numbers) {
-    var answer = numbers.reduce((a, c) =>
+    let answer = numbers.reduce((a, c) =>
         a / c
     );
     return answer

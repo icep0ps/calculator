@@ -1,6 +1,9 @@
+
+
+
 body{
     background-color: rgb(253, 253, 253);
-    font-family: Bahnschrift;
+    font-family: 'RecursoSansRegular';
 }
 .text{
 
@@ -9,6 +12,7 @@ width: 400px;
 
 
 }
+
 
 ul{
 
@@ -54,6 +58,9 @@ ul{
     height: 100px;
     padding-right: 10px;
     text-size-adjust: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
 
 }
@@ -84,6 +91,8 @@ button{
     height: 100%;
     width: 100%;
 }
+
+
 .numbers {
     padding: 0px;
     border: black solid 1px;
@@ -118,3 +127,13 @@ button{
     background-color: #000000;
     width: 100%;
 }
+.clear:hover{
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    padding: 0px;
+    border: black solid 1px;
+    background-color: #ff0000;
+    width: 100%;
+}
+
+
