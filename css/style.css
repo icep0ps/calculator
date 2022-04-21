@@ -5,10 +5,13 @@ body{
     background-color: rgb(253, 253, 253);
     font-family: 'RecursoSansRegular';
 }
+
+
 .text{
 
 text-align: left;
-width: 400px;
+max-width: 300px;
+
 
 
 }
@@ -22,6 +25,7 @@ ul{
 
 #container{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-top: 100px;
