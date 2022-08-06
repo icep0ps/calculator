@@ -1,143 +1,133 @@
-
-
-
-body{
-    background-color: rgb(253, 253, 253);
-    font-family: 'RecursoSansRegular';
+body {
+  background-color: rgb(253, 253, 253);
+  font-family: 'RecursoSansRegular';
 }
 
-
-.text{
-
-text-align: left;
-max-width: 300px;
-
-
-
+.text {
+  text-align: left;
+  max-width: 300px;
 }
 
-
-ul{
-
-    padding: 0px;
-
+ul {
+  padding: 0px;
 }
 
-#container{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-    gap: 100px;
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 100px;
 }
 
-#body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 350px;
-    height: 600px;
+#body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 350px;
+  height: 600px;
 }
 
-#display{
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
-    border: black solid 2px;
-    border-bottom: none;
-    width: 350px;
-    height: 250px;
-    font-size: 70px;
-    color: white;
-    background-color: #121212;
-
-
-}
-.output{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    max-width: 350px;
-    height: 100px;
-    padding-right: 10px;
-    text-size-adjust: 90%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-
-
+#display {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+  border: black solid 2px;
+  border-bottom: none;
+  width: 350px;
+  height: 250px;
+  font-size: 70px;
+  color: white;
+  background-color: #121212;
 }
 
-#buttons{
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4,1fr);
-    width: 350px;
-    height: 350px;
-    background-color: #252525;
+#display > p {
+  margin: 0;
 
-    border: black solid 2px;
+  margin-bottom: 10px;
+}
+.output {
+  width: 350px;
+  height: 100px;
+  overflow: hidden;
+  padding-right: 10px;
+  text-align: right;
+  overflow-wrap: break-word;
 }
 
-a{
-    color: black;
-    text-decoration: none;
-}
-button{
+#buttons {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 350px;
+  height: 350px;
+  background-color: #252525;
 
-    font-family: Bahnschrift;
-    background: none;
-    border: none;
-    cursor: pointer;
-    height: 100%;
-    width: 100%;
+  border: black solid 2px;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+button {
+  font-family: Bahnschrift;
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
 
 .numbers {
-    padding: 0px;
-    border: black solid 1px;
-    background-color: white;
-    width: 100%;
-    height: 100%;
+  transition: 0.2s ease-in-out;
+  padding: 0px;
+  border: black solid 1px;
+  background-color: white;
+  width: 100%;
+  height: 100%;
 }
 .operators {
-    font-weight: bolder;
-    padding: 0px;
-    border: black solid 1px;
-    background-color: #FF0000;
-    width: 100%;
-    height: 100%;
+  font-weight: bolder;
+  padding: 0px;
+  border: black solid 1px;
+  background-color: #ff0000;
+  width: 100%;
+  height: 100%;
 }
 
-.equals {
-    color: white;
-    font-weight: bolder;
-    padding: 0px;
-    border: black solid 1px;
-    background-color: #000000;
-    width: 100%;
+.mini {
+  font-size: 1rem;
+  color: #bdbdbd;
+  padding-right: 10px;
 }
 
+.Equal {
+  color: white;
+  font-weight: bolder;
+  padding: 0px;
+  border: black solid 1px;
+  background-color: #000000;
+  width: 100%;
+}
 
 .clear {
-    color: white;
-    font-weight: bolder;
-    padding: 0px;
-    border: black solid 1px;
-    background-color: #000000;
-    width: 100%;
+  color: white;
+  font-weight: bolder;
+  padding: 0px;
+  border: black solid 1px;
+  background-color: #000000;
+  width: 100%;
 }
-.clear:hover{
-    color: rgb(0, 0, 0);
-    font-weight: bolder;
-    padding: 0px;
-    border: black solid 1px;
-    background-color: #ff0000;
-    width: 100%;
+.clear:hover {
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  padding: 0px;
+  border: black solid 1px;
+  background-color: #ff0000;
+  width: 100%;
 }
-
-

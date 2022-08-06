@@ -1,61 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/recurso-sans" type="text/css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org//face/recurso-sans"
+      type="text/css"
+    />
     <script src="js/main.js" defer></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <title>calculator</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="container">
-        <header>
-            <div class="text">
-                <h1>Calculator</h1>
-                <p>An electronic calculator is typically a portable electronic device
-                    used to perform calculations, ranging from basic arithmetic to complex
-                    mathematics.
-                </p>
-                <h1>Features</h1>
-                <ul>
-                    <li>Keypad (input device) - consists of keys used to input numbers and function commands (addition,
-                        multiplication, square-root, etc.)</li>
-                    <li>Display panel (output device) - displays input numbers, commands and results.</li>
-                    <li>Processor chip (microprocessor or central processing unit).</li>
-
-                </ul>
-
-            </div>
-        </header>
-        <section>
-            <div id="body">
-                <div id="display">
-                    <div class="output"></div>
-                </div>
-                <div id="buttons">
-                    <button class="numbers" data-key="55">7</button>
-                    <button class="numbers" data-key="56">8</button>
-                    <button class="numbers" data-key="57">9</button>
-                    <button class="operators" data-key="55">÷</button>
-                    <button class="numbers" data-key="52">4</button>
-                    <button class="numbers" data-key="53">5</button>
-                    <button class="numbers" data-key="54">6</button>
-                    <button class="operators" data-key="56">x</button>
-                    <button class="numbers" data-key="49">1</button>
-                    <button class="numbers" data-key="50">2</button>
-                    <button class="numbers" data-key="51">3</button>
-                    <button class="operators" data-key="189">-</button>
-                    <button class="clear" data-key="8">clear</button>
-                    <button class="numbers" data-key="48">0</button>
-                    <button class="equals">=</button>
-                    <button class="operators" data-key="187">+</button>
-                </div>
-        </section>
+      <header>
+        <div class="text">
+          <h1>Calculator</h1>
+          <p>
+            An electronic calculator is typically a portable electronic device
+            used to perform calculations, ranging from basic arithmetic to
+            complex mathematics.
+          </p>
+          <h1>Features</h1>
+          <ul>
+            <li>
+              Keypad (input device) - consists of keys used to input numbers and
+              function commands (addition, multiplication, square-root, etc.)
+            </li>
+            <li>
+              Display panel (output device) - displays input numbers, commands
+              and results.
+            </li>
+            <li>Processor chip (microprocessor or central processing unit).</li>
+          </ul>
+        </div>
+      </header>
+      <section>
+        <div id="display">
+          <p class="mini"></p>
+          <p class="output"></p>
+        </div>
+        <div id="buttons">
+          <button class="numbers" data-key="7">7</button>
+          <button class="numbers" data-key="8">8</button>
+          <button class="numbers" data-key="9">9</button>
+          <button class="operators" data-key="/">÷</button>
+          <button class="numbers" data-key="4">4</button>
+          <button class="numbers" data-key="5">5</button>
+          <button class="numbers" data-key="6">6</button>
+          <button class="operators" data-key="*">x</button>
+          <button class="numbers" data-key="1">1</button>
+          <button class="numbers" data-key="2">2</button>
+          <button class="numbers" data-key="3">3</button>
+          <button class="operators" data-key="-">-</button>
+          <button class="clear" data-key="Backspace">clear</button>
+          <button class="numbers" data-key="0">0</button>
+          <button class="Equal" data-key="Enter">=</button>
+          <button class="operators" data-key="+">+</button>
+        </div>
+      </section>
     </div>
-</body>
-
+  </body>
 </html>
