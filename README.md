@@ -44,4 +44,4 @@ function add(numbers) {
 
 # Acknowledgements
 
-[The Odin Project](icep0ps.github.io/calculator/)
+[The Odin Project](https://www.theodinproject.com)
