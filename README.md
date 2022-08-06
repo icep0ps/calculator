@@ -13,7 +13,7 @@ A JavaScript project from the odin project. The pupose of this project was to us
 
 # Demo
 
-Live Preview : [Calculator Project](icep0ps.github.io/calculator/)
+Live Preview : [Calculator](icep0ps.github.io/calculator/)
 
 
 # Lessons Learned
